@@ -1,0 +1,45 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7fafc;
+    text-align: center;
+    margin-left: 250px; 
+    .title {
+      font-size: 9rem;
+      font-weight: bold;
+      color: #4a5568;
+    }
+  
+    .subtitle {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-top: 1rem;
+    }
+  
+    .message {
+      color: #808E38;
+      margin-top: 0.5rem;
+      
+    }
+  
+    .home-link {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #808E38;
+      color: white;
+      border-radius: 0.375rem;
+      font-size: 1.125rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #fcc488;
+        color: #2d3748;
+      }
+    }
+  }
+  

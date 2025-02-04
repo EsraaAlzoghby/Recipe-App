@@ -1,0 +1,111 @@
+h1 {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 48px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.partOne,
+.partTwo,
+.partThree {
+  flex: 1 1 32%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.partOne img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.partTwo p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.partThree ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.partThree h1 {
+  border-bottom: 3px solid #e5e7eb;
+  padding-bottom: 10px;
+  text-align: start;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  padding-left: 0;
+  margin-left: 0;
+}
+.partThree .last {
+  border: none;
+}
+
+li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #e5e7eb;
+  padding-bottom: 15px;
+}
+
+.partThree li:last-child {
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+button.you,
+.source {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.you {
+  background-color: red;
+  font-size: 20px;
+  transition: 0, 6s;
+}
+.you:hover {
+  background-color: #0f0f0e;
+}
+
+.source {
+  background-color: #21ba75;
+  font-size: 20px;
+  transition: 0, 6s;
+}
+.source:hover {
+  background-color: #1a1714;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .partOne,
+  .partTwo,
+  .partThree {
+    flex: 0 0 100%;
+  }
+}/*# sourceMappingURL=Mealdetails.module.css.map */

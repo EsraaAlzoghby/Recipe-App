@@ -1,0 +1,95 @@
+.foodBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-left: 40px;
+}
+.foodBox .foodItem {
+  flex: 0 0 22%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f3f4f6;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 0;
+}
+.foodBox .foodItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.foodBox .foodItem:hover .image img {
+  transform: rotate(360deg);
+}
+.foodBox .foodItem .space {
+  margin-top: 70px;
+  margin-bottom: 2px;
+}
+.foodBox .foodItem .TextMeal {
+  color: #F29723;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 0;
+}
+.foodBox .foodItem .TextMeal svg {
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.foodBox .foodItem .image {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.foodBox .foodItem .image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+.foodBox .foodItem button {
+  background-color: #808E38;
+  color: white;
+  border-radius: 17px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 18px;
+}
+.foodBox .foodItem button:hover {
+  background-color: #1b2002;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .foodItem {
+    flex: 0 0 30%;
+  }
+}
+@media (max-width: 768px) {
+  .foodList {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .foodItem {
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+    width: 98%;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .foodItem {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+}/*# sourceMappingURL=Meals.module.css.map */
