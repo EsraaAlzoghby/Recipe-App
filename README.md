@@ -27,4 +27,5 @@ The **Recipe App** is a user-friendly web application that allows users to explo
 
 
 ## 🌍 **Live Demo**  
-🔗 [Link](https://recipe-app-pink-sigma.vercel.app/)
+🔗 [Click here](https://recipe-app-pink-sigma.vercel.app/) to view the live demo.
+
